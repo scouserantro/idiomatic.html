@@ -78,6 +78,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
   <!doctype html>
 
   ```
+
 ### 3. <a name="elenames">Use Lower Case</a>
 
 Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
