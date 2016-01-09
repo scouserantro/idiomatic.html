@@ -187,6 +187,8 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
   - Do not add blank lines without a reason
   - Lines are no longer than 80 characters
   - Use a new line for every block, list, or table element, and indent every such child element
+  - Lines are no longer than 80 characters
+  - Use a new line for every block, list, or table element, and indent every such child element
 
   ```html
   <!-- Bad  -->
@@ -236,7 +238,6 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
 ### 10. <a name="encoding">Encoding</a>
 
   - Always use UTF-8 (make sure your editor uses UTF-8 as character encoding, without a byte order mark)
-  - Always define image size (It reduces flickering because the browser can reserve space for images before they are loaded)
 
   ```html
   <!-- Good  -->
@@ -281,8 +282,8 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
   - Names that are specific and reflect the purpose of the element should be preferred as these are most understandable and the least likely to change
   - Generic names are simply a fallback for elements that have no particular or no meaning different from their siblings. They are typically needed as “helpers”
   - Using functional or generic names reduces the probability of unnecessary document or template changes
-  - Use ID and class names that are as short as possible but as long as necessary
   - Using ID and class names this way contributes to acceptable levels of understandability and code efficiency
+  - Use ID and class names that are as short as possible but as long as necessary
 
   ```html
   <!-- Bad  -->
@@ -400,7 +401,6 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
   - Always start a new line for each selector and declaration
   - Use single quotation marks for attribute selectors and property values
   - Separate rules by new lines
-  - Use single quotation marks for attribute selectors and property values
 
   ```html
   <!-- Bad  -->
