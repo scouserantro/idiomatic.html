@@ -58,6 +58,7 @@ Forms must be thoroughly tested before going live. Develop tools and changes in 
  * [Hexadecimal Notation](#hex)
  * [Declaration Order](#decorder)
  * [CSS General Formatting](#cssgeneral)
+
 ------------------------------------------------
 
 ## Preface
@@ -136,11 +137,13 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
 
   - We will always use double quotes
 
+  ```html
   <!-- Bad  -->
   <a class='primary'>Sign in</a>
 
   <!-- Good  -->
   <a class="primary">Sign in</a>
+  ```
 
 ### 6. <a name="images">Image Attributes</a>
 
@@ -222,6 +225,7 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
   .example {
     background: url(http://www.google.com/images/example);
   }
+
   <!-- Good  -->
   <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
   .example {
@@ -288,11 +292,11 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
   .clear {}
 
   <!-- Good  -->
-  // specific
+  /* specific  */
   #gallery {}
   #login {}
   .video {}
-  // generic
+  /* generic  */
   .aux {}
   .alt {}  
   ```
@@ -432,4 +436,4 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
 
 ## Appendix
 ----------
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">FAMCare: Principles of Writing Consistent JavaScript</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/scouserantro/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Antro</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a> - Thanks to Rick Waldon and the other contributors.
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">FAMCare: Principles of Writing Consistent JavaScript</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/scouserantro/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Antro</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br /><a rel="Style guide" href="https://google.github.io/styleguide/htmlcssguide.xml">Based Google Style Guide</a> and <a rel="Style Guide" href="http://www.w3schools.com/html/html5_syntax.asp">w3schools Style Guide</a>
