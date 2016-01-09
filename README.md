@@ -134,78 +134,78 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
 
 ### 5. <a name="doublequotes">Use Double Quotes for attributes</a>
 
-    - We will always use double quotes
+  - We will always use double quotes
 
-    <!-- Bad  -->
-    <a class='primary'>Sign in</a>
+  <!-- Bad  -->
+  <a class='primary'>Sign in</a>
 
-    <!-- Good  -->
-    <a class="primary">Sign in</a>
+  <!-- Good  -->
+  <a class="primary">Sign in</a>
 
 ### 6. <a name="images">Image Attributes</a>
 
-    - Always use the alt attribute (even if value is blank)
-    - Always define image size (It reduces flickering because the browser can reserve space for images before they are loaded)
+  - Always use the alt attribute (even if value is blank)
+  - Always define image size (It reduces flickering because the browser can reserve space for images before they are loaded)
 
-    <!-- Bad  -->
-    <img src="spreadsheet.png">
-    <img src="spacer.png">
+  <!-- Bad  -->
+  <img src="spreadsheet.png">
+  <img src="spacer.png">
 
-    <!-- Good  -->
-    <img src="spreadsheet.png" alt="Delete icon">
-    <img src="spacer.png" alt="">
+  <!-- Good  -->
+  <img src="spreadsheet.png" alt="Delete icon">
+  <img src="spacer.png" alt="">
 
 ### 7. <a name="spaces">Indents, Spaces and Equal Signs</a>
 
-    - Always use 2 spaces as an indent
-    - Do not tabs for indents
-    - Do not place spaces between attribute names and values
-    - Spaces are required when multiple values are listed
-    - Always remove trailing white spaces
+  - Always use 2 spaces as an indent
+  - Do not tabs for indents
+  - Do not place spaces between attribute names and values
+  - Spaces are required when multiple values are listed
+  - Always remove trailing white spaces
 
-    ```html
-    <!-- Bad  -->
-    <link rel = "stylesheet" href = "styles.css">
-    <div style="color:red;border:1px solid red;">
-      <!-- html  -->
-    </div>
+  ```html
+  <!-- Bad  -->
+  <link rel = "stylesheet" href = "styles.css">
+  <div style="color:red;border:1px solid red;">
+    <!-- html  -->
+  </div>
 
-    <!-- Good  -->
-    <link rel="stylesheet" href="styles.css">
-    <div style="color:red; border:1px solid red;">
-      <!-- html  -->
-    </div>
-    ```
+  <!-- Good  -->
+  <link rel="stylesheet" href="styles.css">
+  <div style="color:red; border:1px solid red;">
+    <!-- html  -->
+  </div>
+  ```
 ### 8. <a name="formatting">General Formatting Rules</a>
 
-    - Do not add blank lines without a reason
-    - Lines are no longer than 80 characters
-    - Use a new line for every block, list, or table element, and indent every such child element
+  - Do not add blank lines without a reason
+  - Lines are no longer than 80 characters
+  - Use a new line for every block, list, or table element, and indent every such child element
 
-    ```html
-    <!-- Bad  -->
-    <body>
+  ```html
+  <!-- Bad  -->
+  <body>
 
-      <h1>The Header</h1>
+    <h1>The Header</h1>
 
-      <p>
-      Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and and the most populous metropolitan area in the world. It is the seat of the Japanese government and the Imperial Palace, and the home of the Japanese Imperial Family.
-      </p>
+    <p>
+    Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and and the most populous metropolitan area in the world. It is the seat of the Japanese government and the Imperial Palace, and the home of the Japanese Imperial Family.
+    </p>
 
-    </body>
+  </body>
 
-    <!-- Good  -->
-    <body>
-      <h1>The Header</h1>
-      <p>
-      Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
- and and the most populous metropolitan area in the world. It is the seat of
- the Japanese government and the Imperial Palace, and the home of the Japanese
- Imperial Family.
-      </p>
-    </body>
+  <!-- Good  -->
+  <body>
+    <h1>The Header</h1>
+    <p>
+    Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+and and the most populous metropolitan area in the world. It is the seat of
+the Japanese government and the Imperial Palace, and the home of the Japanese
+Imperial Family.
+    </p>
+  </body>
 
-    ```
+  ```
 
 ## Appendix
 ----------
