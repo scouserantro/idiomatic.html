@@ -147,6 +147,7 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
   - Always use the alt attribute (even if value is blank)
   - Always define image size (It reduces flickering because the browser can reserve space for images before they are loaded)
 
+  ```html
   <!-- Bad  -->
   <img src="spreadsheet.png">
   <img src="spacer.png">
@@ -154,6 +155,7 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
   <!-- Good  -->
   <img src="spreadsheet.png" alt="Delete icon">
   <img src="spacer.png" alt="">
+  ```
 
 ### 7. <a name="spaces">Indents, Spaces and Equal Signs</a>
 
