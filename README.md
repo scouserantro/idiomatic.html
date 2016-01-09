@@ -26,10 +26,11 @@
  * [Sitepoint HTML](http://jsfiddle.net/)
  * [Can I Use](http://caniuse.com/)
  * [Tage List](http://www.w3schools.com/tags/)
+
 ## Get Smart
 
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [Sitepoint HTML page](http://www.sitepoint.com/html-css/html/)
+ * [Annotated ECMAScript 5.1](http://es5.github.com/)
+ * [Sitepoint HTML page](http://www.sitepoint.com/html-css/html/)
 
 ### Test Facility
 
@@ -39,8 +40,8 @@ Forms must be thoroughly tested before going live. Develop tools and changes in 
 
  * [Be Smart and Future Proof](#besmart)
  * [Document Type](#doctype)
- * [](#elenames)
- * [](#cloasetags)
+ * [Element Names](#elenames)
+ * [Closing Tags](#closetags)
  * [Use of Quotes](#doublequotes)
  * [Image Attributes](#images)
  * [Indents, Spaces and Equal Signs](#spaces)
@@ -59,27 +60,25 @@ Forms must be thoroughly tested before going live. Develop tools and changes in 
  * [](#)
 ------------------------------------------------
 
-
 ## Preface
 
 The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
 
 ## Idiomatic Style Manifesto
 
-1. <a name="besmart">Whitespace</a>
+### 1. <a name="besmart">Be Smart and Future Proof</a>
   - In the future, programs like XML readers, may want to read your HTML.
   - Using a well-formed "close to XHTML" syntax, can be smart.
   - Always keep your style smart, tidy, clean and well-formed - these rules will help
 
-2. <a name="doctype">Use Correct Document Type</a>
+### 2. <a name="doctype">Use Correct Document Type</a>
   - Always declare the document type as the first line in your document
   - For consistency with other elements, use lower case
   ```html
   <!doctype html>
 
   ```
-
-3. <a name="elenames">Use Lower Case</a>
+### 3. <a name="elenames">Use Lower Case</a>
 
 Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
 
@@ -98,8 +97,7 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
   </div>
 
   ```
-
-4. <a name="closetages">Close All HTML Elements</a>
+### 4. <a name="closetages">Close All HTML Elements</a>
 
   HTML5 does not require elements to be close, but...
 
@@ -130,8 +128,7 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
     <meta charset="utf-8">
     <br>
     ```
-
-5. <a name="doublequotes">Use Double Quotes for attributes</a>
+### 5. <a name="doublequotes">Use Double Quotes for attributes</a>
 
     - We will always use double quotes
 
@@ -143,8 +140,7 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
     <a class="primary">Sign in</a>
 
     ```
-
-5. <a name="images">Image Attributes</a>
+### 6. <a name="images">Image Attributes</a>
 
     - Always use the alt attribute (even if value is blank)
     - Always define image size (It reduces flickering because the browser can reserve space for images before they are loaded)
@@ -160,7 +156,7 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
 
     ```
 
-6. <a name="spaces">Indents, Spaces and Equal Signs</a>
+### 7. <a name="spaces">Indents, Spaces and Equal Signs</a>
 
     - Always use 2 spaces as an indent
     - Do not tabs for indents
@@ -181,7 +177,7 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
       <!-- html  -->
     </div>
     ```
-7. <a name="formatting">General Formatting Rules</a>
+### 8. <a name="formatting">General Formatting Rules</a>
 
     - Do not add blank lines without a reason
     - Lines are no longer than 80 characters
