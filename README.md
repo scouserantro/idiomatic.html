@@ -98,55 +98,55 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
   </div>
 
   ```
+
 ### 4. <a name="closetages">Close All HTML Elements</a>
 
   HTML5 does not require elements to be close, but...
 
-    - We will close all elements
+  - We will close all elements
 
-    ```html
-    <!-- Bad  -->
-    <div>
-      <p>Paragraph 1
-      <p>Paragraph 2
-    </div>
+  ```html
+  <!-- Bad  -->
+  <div>
+    <p>Paragraph 1
+    <p>Paragraph 2
+  </div>
 
-    <!-- Good  -->
-    <div>
-      <p>Paragraph 1</p>
-      <p>Paragraph 2</p>
-    </div>
+  <!-- Good  -->
+  <div>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+  </div>
 
-    ```
-    - Exceptions: do not close empty elements...
+  ```
 
-    ```html
-    <!-- Bad  -->
-    <meta charset="utf-8" />
-    <br />
+  - Exceptions: do not close empty elements...
 
-    <!-- Good  -->
-    <meta charset="utf-8">
-    <br>
-    ```
+  ```html
+  <!-- Bad  -->
+  <meta charset="utf-8" />
+  <br />
+
+  <!-- Good  -->
+  <meta charset="utf-8">
+  <br>
+  ```
+
 ### 5. <a name="doublequotes">Use Double Quotes for attributes</a>
 
     - We will always use double quotes
 
-    ```html
     <!-- Bad  -->
     <a class='primary'>Sign in</a>
 
     <!-- Good  -->
     <a class="primary">Sign in</a>
 
-    ```
 ### 6. <a name="images">Image Attributes</a>
 
     - Always use the alt attribute (even if value is blank)
     - Always define image size (It reduces flickering because the browser can reserve space for images before they are loaded)
 
-    ```html
     <!-- Bad  -->
     <img src="spreadsheet.png">
     <img src="spacer.png">
@@ -154,8 +154,6 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
     <!-- Good  -->
     <img src="spreadsheet.png" alt="Delete icon">
     <img src="spacer.png" alt="">
-
-    ```
 
 ### 7. <a name="spaces">Indents, Spaces and Equal Signs</a>
 
