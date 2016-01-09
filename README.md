@@ -337,6 +337,9 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
 
 ### 17. <a name="zeros">0 and Units</a>
 
+  * Omit unit specification after "0" values
+  * Omit leading "0"s in values
+
   - Omit unit specification after "0" values
   - Omit leading "0"s in values
 
