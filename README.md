@@ -279,7 +279,7 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
 
   - Always use meaningful or generic ID and class names
   - Names that are specific and reflect the purpose of the element should be preferred as these are most understandable and the least likely to change
-  - Generic names are simply a fallback for elements that have no particular or no meaning different from their siblings. They are typically needed as “helpers.”
+  - Generic names are simply a fallback for elements that have no particular or no meaning different from their siblings. They are typically needed as “helpers”
   - Using functional or generic names reduces the probability of unnecessary document or template changes
   - Use ID and class names that are as short as possible but as long as necessary
   - Using ID and class names this way contributes to acceptable levels of understandability and code efficiency
@@ -398,6 +398,7 @@ Omit the protocol portion (http:, https:) from URLs pointing to images and other
   - Always use a single space between property and value (but no space between property and colon) for consistency reasons
   - Always use a single space between the last selector and the opening brace that begins the declaration block, and the opening brace should be on the same line as the last selector in a given rule
   - Always start a new line for each selector and declaration
+  - Use single quotation marks for attribute selectors and property values
   - Separate rules by new lines
   - Use single quotation marks for attribute selectors and property values
 
