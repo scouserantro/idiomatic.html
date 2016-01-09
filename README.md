@@ -49,15 +49,15 @@ Forms must be thoroughly tested before going live. Develop tools and changes in 
  * [Protocol](#protocol)
  * [Encoding](#encoding)
  * [Entity References](#entities)
- * [Type Attributes](#)
- * [CSS Validity](#)
- * [ID and Class Names](#)
- * [Type Selectors](#)
- * [Shorthand Properties](#)
- * [0 and Units](#)
- * [ID and Class Name Delimiters](#)
- * [](#)
- * [](#)
+ * [Type Attributes](#typeatts)
+ * [CSS Validity](#validcss)
+ * [ID and Class Names](#idnames)
+ * [Type Selectors](#typesels)
+ * [Shorthand Properties](#shorthand)
+ * [0 and Units](#zeros)
+ * [Hexadecimal Notation](#hex)
+ * [Declaration Order](#decorder)
+ * [CSS General Formatting](#cssgeneral)
 ------------------------------------------------
 
 ## Preface
@@ -178,6 +178,7 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
     <!-- html  -->
   </div>
   ```
+
 ### 8. <a name="formatting">General Formatting Rules</a>
 
   - Do not add blank lines without a reason
@@ -207,6 +208,226 @@ Imperial Family.
     </p>
   </body>
 
+  ```
+
+### 9. <a name="protocol">Protocol</a>
+
+  - Omit the protocol from embedded resources
+
+Omit the protocol portion (http:, https:) from URLs pointing to images and other media files, style sheets, and scripts unless the respective files are not available over both protocols. Omitting the protocol—which makes the URL relative—prevents mixed content issues and results in minor file size savings.
+
+  ```html
+  <!-- Bad  -->
+  <script src="http://www.google.com/js/gweb/analytics/autotrack.js"></script>
+  .example {
+    background: url(http://www.google.com/images/example);
+  }
+  <!-- Good  -->
+  <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
+  .example {
+    background: url(//www.google.com/images/example);
+  }
+  ```
+
+### 10. <a name="encoding">Encoding</a>
+
+  - Always use UTF-8 (make sure your editor uses UTF-8 as character encoding, without a byte order mark)
+  - Always define image size (It reduces flickering because the browser can reserve space for images before they are loaded)
+
+  ```html
+  <!-- Good  -->
+  <meta charset="utf-8">
+  ```
+
+### 11. <a name="entities">Entity References</a>
+
+  - Use entity names (FAMCare does not recognize the symbols regardless of encoding)
+
+  ```html
+  <!-- Bad  -->
+  The currency symbol for the Euro is €.
+
+  <!-- Good  -->
+  The currency symbol for the Euro is &euro; or &#8364;.
+  ```
+
+### 12. <a name="attributes">Type Attributes</a>
+
+  - Omit type attributes for style sheets and scripts.
+
+  ```html
+  <!-- Bad  -->
+  <link rel="stylesheet" href="//www.google.com/css/maia.css" type="text/css">
+  <script src="//www.google.com/js/gweb/analytics/autotrack.js"
+ type="text/javascript"></script>
+
+  <!-- Good  -->
+  <link rel="stylesheet" href="//www.google.com/css/maia.css">
+  <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
+  ```
+
+### 13. <a name="validcss">CSS Validity</a>
+
+  - Always use valid CSS where possible
+  - Use tools such as the W3C [CSS validator](http://jigsaw.w3.org/css-validator/) to test
+
+### 14. <a name="idnames">ID and Class Names</a>
+
+  - Always use meaningful or generic ID and class names
+  - Names that are specific and reflect the purpose of the element should be preferred as these are most understandable and the least likely to change
+  - Generic names are simply a fallback for elements that have no particular or no meaning different from their siblings. They are typically needed as “helpers.”
+  - Using functional or generic names reduces the probability of unnecessary document or template changes
+  - Use ID and class names that are as short as possible but as long as necessary
+  - Using ID and class names this way contributes to acceptable levels of understandability and code efficiency
+
+  ```html
+  <!-- Bad  -->
+  #yee-1901 {}
+  <img src="spacer.png">
+  .button-green {}
+  .clear {}
+
+  <!-- Good  -->
+  // specific
+  #gallery {}
+  #login {}
+  .video {}
+  // generic
+  .aux {}
+  .alt {}  
+  ```
+
+### 15. <a name="typesels">Type Selectors</a>
+
+  - Avoid qualifying ID and class names with type selectors (for performance reasons)
+
+  ```html
+  <!-- Bad  -->
+  ul#example {}
+  div.error {}
+
+  <!-- Good  -->
+  #example {}
+  .error {}
+  ```
+
+### 16. <a name="shorthand">Shorthand</a>
+
+  - Always use shorthand properties where possible
+
+  ```html
+  <!-- Bad  -->
+  border-top-style: none;
+  font-family: palatino, georgia, serif;
+  font-size: 100%;
+  line-height: 1.6;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0;
+
+  <!-- Good  -->
+  border-top: 0;
+  font: 100%/1.6 palatino, georgia, serif;
+  padding: 0 1em 2em;
+  ```
+
+### 17. <a name="zeros">0 and Units</a>
+
+  - Omit unit specification after "0" values
+  - Omit leading "0"s in values
+
+  ```html
+  <!-- Bad  -->
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.8em;
+
+  <!-- Good  -->
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+  ```
+
+### 18. <a name="hex">Hexadecimal Notation</a>
+
+  - Use 3 character hexadecimal notation where possible
+
+  ```html
+  <!-- Bad  -->
+  color: #eebbcc;
+
+  <!-- Good  -->
+  color: #ebc;
+  ```
+
+### 19. <a name="decorder">Declaration Order</a>
+
+  - Put declarations in alphabetical order in order to achieve consistent code in a way that is easy to remember and maintain
+
+  ```html
+  <!-- Bad  -->
+  color: black;
+  background: fuchsia;
+  border-radius: 4px;
+  border: 1px solid;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  text-align: center;
+  text-indent: 2em;
+
+  <!-- Good  -->
+  background: fuchsia;
+  border: 1px solid;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: black;
+  text-align: center;
+  text-indent: 2em;
+  ```
+
+### 20. <a name="cssgeneral">General Formatting</a>
+
+  - Indent all block content, that is rules within rules as well as declarations, so to reflect hierarchy and improve understanding
+  - End every declaration with a semicolon for consistency and extensibility reasons
+  - Always use a single space between property and value (but no space between property and colon) for consistency reasons
+  - Always use a single space between the last selector and the opening brace that begins the declaration block, and the opening brace should be on the same line as the last selector in a given rule
+  - Always start a new line for each selector and declaration
+  - Separate rules by new lines
+  - Use single quotation marks for attribute selectors and property values
+
+  ```html
+  <!-- Bad  -->
+  #video{
+    margin-top: 1em;
+  }
+  #video
+  {
+    margin-top: 1em;
+  }
+  a:focus, a:active {
+  position: relative; top: 1px;
+  }
+  html {
+    font-family: "open sans", arial, sans-serif;
+  }
+
+  <!-- Good  -->
+  #video {
+    margin-top: 1em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  html {
+    font-family: 'open sans', arial, sans-serif;
+  }
   ```
 
 ## Appendix
