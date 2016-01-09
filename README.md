@@ -187,8 +187,6 @@ Whilst HTML5 allows mixing uppercase and lowercase letters in element names...
   - Do not add blank lines without a reason
   - Lines are no longer than 80 characters
   - Use a new line for every block, list, or table element, and indent every such child element
-  - Lines are no longer than 80 characters
-  - Use a new line for every block, list, or table element, and indent every such child element
 
   ```html
   <!-- Bad  -->
